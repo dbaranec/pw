@@ -1,0 +1,11 @@
+.main-container-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.main-container {
+    max-width: 600px;
+    max-height: 100vh;
+    overflow: auto;
+    border-right: rgb(56, 68, 77) 1px solid;
+}

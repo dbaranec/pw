@@ -1,0 +1,9 @@
+<div class="main-container-wrapper">
+    <div class="main-container"
+         #mainContainer
+         (scroll)="onScroll($event)"
+    >
+        <ng-content select="[mainContentSlot]"></ng-content>
+    </div>
+    <ng-container *ngTemplateOutlet="customRightComponent"></ng-container>
+</div>

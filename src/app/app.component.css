@@ -1,0 +1,9 @@
+.header-container {
+    height: 100%;
+    width: 100%;
+    max-width: 250px;
+    margin: 0;
+    border-right: rgb(56, 68, 77) 1px solid;
+}
+
+

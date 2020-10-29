@@ -1,0 +1,15 @@
+<app-main-container [customRightComponent]="detailContentSlot" (atBottomEvent)="loadMorePicture()">
+    <div mainContentSlot>
+        <app-picture *ngFor="let picture of picturesData"
+                     [picture]="picture"
+                     (showDetail)="selectedPicture(picture)"
+        ></app-picture>
+    </div>
+
+</app-main-container>
+
+<ng-template #detailContentSlot>
+    <ng-container *ngIf="picture">
+        <app-detail *ngIf="picture" [pictureData]="picture"></app-detail>
+    </ng-container>
+</ng-template>

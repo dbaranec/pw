@@ -1,10 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-app',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'pw';
+export class AppComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+  onActivate(event): void {
+    console.log(event.Nasa);
+  }
 }

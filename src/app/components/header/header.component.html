@@ -1,0 +1,21 @@
+<mat-toolbar>
+    <div class="toolbar-name">
+        <h1>Astronom</h1>
+    </div>
+    <div class="toolbar-logo">
+        <a routerLink="/home">
+            <img src="/assets/mirror.png">
+        </a>
+    </div>
+    <div class="toolbar-menu">
+        <a [routerLink]="[{outlets: {'outlet-main': ['nasa']}}]"
+        >
+            <span>NASA-1</span>
+        </a>
+        <a [routerLink]="[{outlets: {'outlet-main': ['about']}}]">
+            <span>ABOUT</span>
+        </a>
+    </div>
+</mat-toolbar>
+
+
